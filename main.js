@@ -1,11 +1,7 @@
-/* If You Copy, Don`t Delete This Credit!!! 
-  Don`t Sell This Script Or I Take Immediately 
-  Yang Jual Script Ini Report/Hangusin Aja Akunnya Atau Pukulin ae orangnya
-  Move To Pairing Code
-  Buat Yg Nggk muncul Codenya Itu Disebabkan Oleh Banyaknya Plugins
-  Jika Ingin Mengambil Sesi, Backup Semua File Plugins & Hapus Semua File Plugins
-  Setelah Sudah Kalian Bisa Mengembalikan Semua File Pluginsnya Agar Bisa Dipakai
-  Regards from YanXiao ♡
+/* 
+  Thanks For ImYanXiao
+  Recode By RayRepublic 
+  * MENGHAPUS CREDIT SAMA SAJA TIDAK MENGHARGAI CREATOR!!
 */
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
@@ -115,7 +111,7 @@ setInterval(() => {
 }, 10_000)
 
 const { version, isLatest} = await fetchLatestBaileysVersion()
-const { state, saveCreds } = await useMultiFileAuthState('./sessions')
+const { state, saveCreds } = await useMultiFileAuthState('./KuboSession')
 const connectionOptions = {
         version,
         logger: pino({ level: 'silent' }), 
@@ -198,7 +194,7 @@ function clearTmp() {
   })
 }
 
-function clearSessions(folder = 'sessions') {
+function clearSessions(folder = 'KuboSession') {
 	let filename = []
 	readdirSync(folder).forEach(file => filename.push(join(folder, file)))
 	return filename.map(file => {
@@ -261,8 +257,8 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '❖━━━━━━[ ᴡᴇʟᴄᴏᴍᴇ ]━━━━━━❖\n\n┏––––––━━━━━━━━•\n│☘︎ @subject\n┣━━━━━━━━┅┅┅\n│( 👋 Hallo @user)\n├[ ɪɴᴛʀᴏ ]—\n│ ɴᴀᴍᴀ: \n│ ᴜᴍᴜʀ: \n│ ɢᴇɴᴅᴇʀ:\n┗––––––━━┅┅┅\n\n––––––┅┅ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ┅┅––––––\n@desc'
-  conn.bye = '❖━━━━━━[ ʟᴇᴀᴠɪɴɢ ]━━━━━━❖\n𝚂𝚊𝚢𝚘𝚗𝚊𝚛𝚊𝚊 @user 👋😃'
+  conn.welcome = 'Welcome @user ✨'
+  conn.bye = 'GoodByee @user 👋'
   conn.spromote = '@user Sekarang jadi admin!'
   conn.sdemote = '@user Sekarang bukan lagi admin!'
   conn.sDesc = 'Deskripsi telah diubah menjadi \n@desc'
