@@ -1,6 +1,6 @@
 {
-    "name": "Elaina-BOT",
-    "version": "7.25.1",
+    "name": "KuboChan",
+    "version": "1.7",
     "description": "BOT Whatsapp",
     "main": "index.js",
     "type": "module",
