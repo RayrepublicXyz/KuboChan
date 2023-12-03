@@ -1,20 +1,8 @@
-// S C R I P T  O R I  B Y  Bochilgaming 🔭
-
-// - - THANKS TO - -
-// • Allah SWT
-// • Nurutomo
-// • Bochilgaming
-// • Rominaru
-// • Kannachann
-// • FahriAdison
-// • The.Sad.Boy01
-// • Rlxfly
-// • Rasel comel
-// • ImYanXiao
-// • Xtreshe (Beban)
-// • Dll
-
-//[!] Jangan Lupa Ganti Bagian global.owner
+/* 
+  BASE : BOCHILGAMING
+  RECODE BY RAYREPUBLIC
+       wa.me/6283199346086
+*/
 
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
@@ -41,41 +29,31 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       year: 'numeric'
     })
       
-    
-/*============== SOCIAL ==============*/
-
-// kalo ga punya biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/Xiao_yan_21' //Link Instagrammu
-global.sgh = 'https://github.com/ImYanXiao' //Link Githubmu
-global.sgc = 'https://chat.whatsapp.com/DyBMXDw1IshFM9z0ZHZNlR'
-global.sdc = '-' //Isi Pake Link Discordmu Kalo Gada Biarin aja
-global.snh = 'https://nhentai.net/' //Hmmm, Ini boleh kalian isi terserah :v
-
-/*============== PAYMENT ==============*/
-global.pdana = '085736178354' //Nomor Danamu
-global.ppulsa = '085736178354' //Nomor SimCard Yang Kamu Pake
-global.psaweria = 'https://saweria.com/XiaoYan021' //Link Saweriamu Kalo Nggada Ketik - aja
-
-/*============== NOMOR ==============*/
-global.nomorbot = '6281231079387' //Nomor Bot
-global.nomorown = '6285736178354' //Nomor Owner
-global.namebot = 'Elaina BOT' //Nama Bot
-global.nameown = '𝓧𝓲𝓪𝓸 - 𝓨𝓪𝓷' // Nama Owner
-
-
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285736178354', '❦ 𝚇 𝚒 𝚊 𝚘 - 𝚈𝚊𝚗? 🎐', true] //Ganti jd nomormu sama Namamu
-  // [number, dia creator/owner?, dia developer?]
-] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
+  ['6283127962809', 'Rayrepublic', true]
+] // PUT YOUR NUMBER HERE
+global.mods = [] 
+global.prems = []
+/*============== SOCIAL ==============*/
+global.sig = 'https://instagram.com/'
+global.sgh = 'https://github.com/'
+global.sgc = 'https://chat.whatsapp.com/'
+global.snh = 'https://nhentai.net/'
 
-
-global.lolkey = 'apikeymu'
+/*============== PAYMENT ==============*/
+global.pdana = ''
+global.ppulsa = ''
+global.psaweria = 'https://saweria.com/'
+/*============== NOMOR ==============*/
+global.nomorbot = '628'
+global.nomorown = '628'
+global.namebot = 'KuboChan'
+global.nameown = 'Rayrepublic'
+/*============== KEYS ==============*/
+global.lolkey = 'APIKEYMU'
 global.xkey = 'APIKEYMU'
 /*============== API ==============*/
-// Tambahin Rest Apinya Sendiri Krn yg saya hapus apinya sudah Mati
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -85,18 +63,21 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.lolhuman.xyz': 'Apikeymu'
 }
-// Kata APIKEY itu isi dengan apikeymu, dengan beli ke website itu
-
 /*============== WATERMARK ==============*/
-global.wm = '                「 ᴇʟᴀɪɴᴀ 𝙱𝙾𝚃 汉  」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴇʟᴀɪɴᴀ - ᴄʜᴀɴ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ ᴇʟᴀɪɴᴀ 𝙱𝙾𝚃'
-global.namedoc = 'Elaina`s Bot' //Main Name Menu Document
+global.wm = 'The Next bot WhatsApp ' //Main Watermark
+global.wm2 = 'KuboChan Powered By RayRepublic'
+global.wm3 = '⫹⫺ KuboChan - MultiDevice'
+global.namedoc = 'Seterah' //Main Name Menu Document
 global.botdate = `⫹⫺ Day's: ${week} ${date}`
 global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
 global.titlebot = '🎋 ┊ sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ'
 global.author = global.wm
-
+/*============== WATERMARKV2 ==============*/
+global.stickpack = '.'
+global.stickauth = `KuboChan`
+global.packname = 'Sticker Request By '
+global.packname2 = 'Create By RayRepublic'
+/*============== PEMBATAS YANG DIBAWAH GA PENTING ==============*/
 
 /*============== LOGO ==============*/
 global.thumb = 'https://telegra.ph/file/cce9ab4551f7150f1970d.jpg' //Main Thumbnail
@@ -357,13 +338,6 @@ global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
 global.lolm = 'Ⓛ' //LOGO LIMIT/FREE ON MENU.JS
 global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
-
-/*============== STICKER WM ==============*/
-global.stickpack = '.'
-global.stickauth = `☂︎\n𝗘\nl\na\ni\nn\na\n-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
-global.packname = 'Sticker Request By '
-global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴇʟᴀɪɴᴀ ʙᴏᴛᴢ'
-
 global.multiplier = 38 // The higher, The harder levelup
 
 /*============== EMOJI ==============*/
@@ -417,3 +391,4 @@ watchFile(file, () => {
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
+                     
