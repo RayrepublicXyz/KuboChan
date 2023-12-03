@@ -568,7 +568,28 @@ global.dfail = (type, m, conn) => {
         unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* • ᴋᴇᴛɪᴋ  .daftar ᴜɴᴛᴜᴋ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ', 
         restrict: '*ʀᴇsᴛʀɪᴄᴛ* • ʀᴇsᴛʀɪᴄᴛ ʙᴇʟᴜᴍ ᴅɪɴʏᴀʟᴀᴋᴀɴ ᴅɪᴄʜᴀᴛ ɪɴɪ',
     }[type]
-    if (msg) return conn.reply(m.chat, msg, fakes)
+    if (msg) return conn.sendMessage(m.chat, {
+text: msg,
+contextInfo: {
+externalAdReply: {
+title: 'F I T U R D A N I E D - A C C E S',
+thumbnailUrl: danied,
+mediaType: 1,
+renderLargerThumbnail: true
+}}}, { quoted: m})
+    let msgg = {
+        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* • ᴋᴇᴛɪᴋ  .daftar ᴜɴᴛᴜᴋ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ'`
+    }[type]
+    if (msgg) return conn.reply(m.chat, msgg, m, {
+contextInfo: {
+mentionedJid: [m.sender],
+externalAdReply: {
+title: 'D A F T A R D U L U K A K',
+thumbnailUrl: daftar,
+mentionedJid: [m.sender], 
+mediaType: 1,
+renderLargerThumbnail: true
+}}})
 }
 
 let file = global.__filename(import.meta.url, true)
